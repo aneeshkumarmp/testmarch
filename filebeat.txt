@@ -1,0 +1,34 @@
+209.104.151.13
+
+add_cloud_metadata/add_cloud_metadata.go:340    add_cloud_metadata: hosting provider type not detected.
+
+echo "my name is test" | logger -t yyyyyyyyy -P 5514
+
+
+
+/usr/share/filebeat/bin/./filebeat test config -e
+
+
+2020-03-06T11:31:46.272+0530    INFO    [publisher]     pipeline/module.go:110  Beat name: test.netlink.com
+2020-03-06T11:31:46.273+0530    ERROR   fileset/modules.go:118  Not loading modules. Module directory not found: /usr/share/filebeat/bin/module
+
+
+
+/usr/share/filebeat/bin/filebeat -c /etc/filebeat/filebeat.yml -e -d "*"
+
+
+filebeat verify 
+cd /etc/filebeat
+filebeat test output -e -c filebeat.yml
+
+[root@test filebeat]# filebeat test output -e -c filebeat.yml
+2020-03-06T12:52:39.242+0530    INFO    instance/beat.go:611    Home path: [/usr/share/filebeat] Config path: [/etc/filebeat] Data path: [/var/lib/filebeat] Logs path: [/var/log/filebeat]
+2020-03-06T12:52:39.242+0530    INFO    instance/beat.go:618    Beat UUID: 0c649d48-4f43-4a8d-a879-862ffbbd601f
+logstash: 10.95.4.123:5044...
+  connection...
+    parse host... OK
+    dns lookup... OK
+    addresses: 10.95.4.123
+    dial up... OK
+  TLS... WARN secure connection disabled
+  talk to server... OK
